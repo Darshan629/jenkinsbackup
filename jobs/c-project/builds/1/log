@@ -1,0 +1,154 @@
+Started by user [8mha:////4Kt+5SGhk8ztyt9GZ/cZ3ejZq2d6CsUjCuYHBiLRUGOPAAAAmR+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAzeEgZe/dLi1CL9lMSi4ozEPAAGT0FPwgAAAA==[0mDarshan Gowda
+Running as SYSTEM
+Building in workspace /var/lib/jenkins/workspace/c-project
+The recommended git tool is: NONE
+No credentials specified
+Cloning the remote Git repository
+Cloning repository https://github.com/Darshan629/c-project.git
+ > git init /var/lib/jenkins/workspace/c-project # timeout=10
+Fetching upstream changes from https://github.com/Darshan629/c-project.git
+ > git --version # timeout=10
+ > git --version # 'git version 2.27.0'
+ > git fetch --tags --force --progress -- https://github.com/Darshan629/c-project.git +refs/heads/*:refs/remotes/origin/* # timeout=10
+ > git config remote.origin.url https://github.com/Darshan629/c-project.git # timeout=10
+ > git config --add remote.origin.fetch +refs/heads/*:refs/remotes/origin/* # timeout=10
+Avoid second fetch
+ > git rev-parse refs/remotes/origin/main^{commit} # timeout=10
+Checking out Revision b0e5c8c78c0baa6131f7b3ebca3ea4838581ed4b (refs/remotes/origin/main)
+ > git config core.sparsecheckout # timeout=10
+ > git checkout -f b0e5c8c78c0baa6131f7b3ebca3ea4838581ed4b # timeout=10
+Commit message: "c project"
+First time build. Skipping changelog.
+[c-project] $ /bin/sh -xe /tmp/jenkins4979044976097497703.sh
++ cd /var/lib/jenkins/workspace/c-project
++ make
+gcc -c main.c
+main.c: In function ‘main’:
+main.c:2:2: warning: implicit declaration of function ‘biggest3’ [-Wimplicit-function-declaration]
+  biggest3();
+  ^~~~~~~~
+main.c:3:2: warning: implicit declaration of function ‘factorial’ [-Wimplicit-function-declaration]
+  factorial();
+  ^~~~~~~~~
+main.c:4:2: warning: implicit declaration of function ‘reverse’ [-Wimplicit-function-declaration]
+  reverse();
+  ^~~~~~~
+main.c:5:2: warning: implicit declaration of function ‘palend’ [-Wimplicit-function-declaration]
+  palend();
+  ^~~~~~
+main.c:6:2: warning: implicit declaration of function ‘biggest2’ [-Wimplicit-function-declaration]
+  biggest2();
+  ^~~~~~~~
+main.c:7:2: warning: implicit declaration of function ‘sum’ [-Wimplicit-function-declaration]
+  sum();
+  ^~~
+main.c:8:2: warning: implicit declaration of function ‘fibanaci’ [-Wimplicit-function-declaration]
+  fibanaci();
+  ^~~~~~~~
+main.c:9:2: warning: implicit declaration of function ‘sort’ [-Wimplicit-function-declaration]
+  sort();
+  ^~~~
+cc    -c -o big3.o big3.c
+gcc -c fact.c
+gcc -c rev.c
+gcc -c pale.c
+pale.c: In function ‘palend’:
+pale.c:18:8: warning: ‘return’ with a value, in function returning void
+ return 0;
+        ^
+pale.c:2:6: note: declared here
+ void palend()
+      ^~~~~~
+gcc -c big2.c
+big2.c: In function ‘biggest2’:
+big2.c:3:5: warning: implicit declaration of function ‘printf’ [-Wimplicit-function-declaration]
+     printf("Please Enter Two different values\n");
+     ^~~~~~
+big2.c:3:5: warning: incompatible implicit declaration of built-in function ‘printf’
+big2.c:3:5: note: include ‘<stdio.h>’ or provide a declaration of ‘printf’
+big2.c:1:1:
++#include <stdio.h>
+ void biggest2() {
+big2.c:3:5:
+     printf("Please Enter Two different values\n");
+     ^~~~~~
+big2.c:4:5: warning: implicit declaration of function ‘scanf’ [-Wimplicit-function-declaration]
+     scanf("%d %d", &a, &b);
+     ^~~~~
+big2.c:4:5: warning: incompatible implicit declaration of built-in function ‘scanf’
+big2.c:4:5: note: include ‘<stdio.h>’ or provide a declaration of ‘scanf’
+big2.c:19:12: warning: ‘return’ with a value, in function returning void
+     return 0;
+            ^
+big2.c:1:6: note: declared here
+ void biggest2() {
+      ^~~~~~~~
+gcc -c sum.c
+sum.c: In function ‘sum’:
+sum.c:4:4: warning: implicit declaration of function ‘printf’ [-Wimplicit-function-declaration]
+    printf("\nEnter two no: ");
+    ^~~~~~
+sum.c:4:4: warning: incompatible implicit declaration of built-in function ‘printf’
+sum.c:4:4: note: include ‘<stdio.h>’ or provide a declaration of ‘printf’
+sum.c:1:1:
++#include <stdio.h>
+ void sum() {
+sum.c:4:4:
+    printf("\nEnter two no: ");
+    ^~~~~~
+sum.c:5:4: warning: implicit declaration of function ‘scanf’ [-Wimplicit-function-declaration]
+    scanf("%d %d", &a, &b);
+    ^~~~~
+sum.c:5:4: warning: incompatible implicit declaration of built-in function ‘scanf’
+sum.c:5:4: note: include ‘<stdio.h>’ or provide a declaration of ‘scanf’
+sum.c:11:10: warning: ‘return’ with a value, in function returning void
+    return(0);
+          ^
+sum.c:1:6: note: declared here
+ void sum() {
+      ^~~
+gcc -c fiba.c
+fiba.c: In function ‘fibanaci’:
+fiba.c:4:2: warning: implicit declaration of function ‘printf’ [-Wimplicit-function-declaration]
+  printf("Enter the number of elements:");
+  ^~~~~~
+fiba.c:4:2: warning: incompatible implicit declaration of built-in function ‘printf’
+fiba.c:4:2: note: include ‘<stdio.h>’ or provide a declaration of ‘printf’
+fiba.c:1:1:
++#include <stdio.h>
+ void fibanaci()
+fiba.c:4:2:
+  printf("Enter the number of elements:");
+  ^~~~~~
+fiba.c:5:2: warning: implicit declaration of function ‘scanf’ [-Wimplicit-function-declaration]
+  scanf("%d",&number);
+  ^~~~~
+fiba.c:5:2: warning: incompatible implicit declaration of built-in function ‘scanf’
+fiba.c:5:2: note: include ‘<stdio.h>’ or provide a declaration of ‘scanf’
+fiba.c:14:10: warning: ‘return’ with a value, in function returning void
+   return 0;
+          ^
+fiba.c:1:6: note: declared here
+ void fibanaci()
+      ^~~~~~~~
+gcc -c sort.c
+sort.c: In function ‘sort’:
+sort.c:11:5: warning: implicit declaration of function ‘printf’ [-Wimplicit-function-declaration]
+     printf("Elements of original array: \n");
+     ^~~~~~
+sort.c:11:5: warning: incompatible implicit declaration of built-in function ‘printf’
+sort.c:11:5: note: include ‘<stdio.h>’ or provide a declaration of ‘printf’
+sort.c:1:1:
++#include <stdio.h>
+ void sort()
+sort.c:11:5:
+     printf("Elements of original array: \n");
+     ^~~~~~
+sort.c:34:12: warning: ‘return’ with a value, in function returning void
+     return 0;
+            ^
+sort.c:1:6: note: declared here
+ void sort()
+      ^~~~
+gcc -o build.exe main.o big3.o fact.o rev.o pale.o big2.o sum.o fiba.o sort.o
+Finished: SUCCESS

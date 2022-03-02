@@ -1,0 +1,8 @@
+Started by user [8mha:////4Kt+5SGhk8ztyt9GZ/cZ3ejZq2d6CsUjCuYHBiLRUGOPAAAAmR+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAzeEgZe/dLi1CL9lMSi4ozEPAAGT0FPwgAAAA==[0mDarshan Gowda
+Running as SYSTEM
+Building on master in workspace /var/lib/jenkins/workspace/deploy
+[DeployPublisher][INFO] Attempting to deploy 1 war file(s)
+[DeployPublisher][INFO] Deploying /var/lib/jenkins/workspace/deploy/hello-world-war-1.0.0.war to container Tomcat 7.x Remote with context null
+  [/var/lib/jenkins/workspace/deploy/hello-world-war-1.0.0.war] is not deployed. Doing a fresh deployment.
+  Deploying [/var/lib/jenkins/workspace/deploy/hello-world-war-1.0.0.war]
+Finished: SUCCESS

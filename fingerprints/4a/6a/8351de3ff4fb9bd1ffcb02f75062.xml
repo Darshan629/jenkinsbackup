@@ -1,0 +1,13 @@
+<?xml version='1.1' encoding='UTF-8'?>
+<fingerprint>
+  <timestamp>2022-02-25 01:20:02.182 UTC</timestamp>
+  <md5sum>4a6a8351de3ff4fb9bd1ffcb02f75062</md5sum>
+  <fileName>Credential id=84da1c46-4100-4b88-8019-a1496edd47b8 name=darshan/******</fileName>
+  <usages>
+    <entry>
+      <string>c-project</string>
+      <ranges>1-2</ranges>
+    </entry>
+  </usages>
+  <facets/>
+</fingerprint>
